@@ -1,0 +1,41 @@
+<html>
+<head>
+<style>
+body{
+background:black;
+color:red;
+text-align:center;
+font-family:digital-7;
+font-size:100px;
+}
+
+div{
+height:350px;
+width:1000px;
+border-radius:30px;
+border:20px groove red;
+box-shadow:0px 0px 50px 5px rgba(255,0,0,1),
+0px 0px 10px 10px rgba(255,0,0,1)inset,
+0px 0px 10px 20px rgba(255,0,0,0.7);
+margin:20px auto;
+font-size:220px;
+line-height:350px;
+
+}
+</style>
+
+</head>
+<body onload="demo()">
+DIGITAL CLOCK
+<div>TIME</div>
+<script>
+function demo()
+{
+var d=new Date()
+document.querySelector("div").innerText=
+d.toLocaleTimeString()
+window.setTimeout(demo,1000)
+}
+</script>
+</body>
+</html>
